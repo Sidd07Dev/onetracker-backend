@@ -1,4 +1,4 @@
-# Welcome to your OneTracker's official Backend  
+# Welcome to  OneTracker's official Backend  
 
 ## Project info
 
@@ -13,10 +13,10 @@ Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/Sidd07Dev/onetracker-backend
 
 # Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd onetracker-backend
 
 # Step 3: add below keys in .env file
 PORT = 8000
@@ -80,4 +80,4 @@ This project is built with:
 
 
 
-# Onetraker1
+# Onetraker

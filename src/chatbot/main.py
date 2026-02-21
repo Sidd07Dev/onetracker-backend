@@ -1,9 +1,11 @@
 from fastapi import FastAPI,Depends,Request
 from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
 
 import uvicorn
 import logging
 import time
+import os
 from sqlalchemy.orm import Session
 
 from .routes.bookings_route import booking_router
@@ -14,7 +16,7 @@ from src.chatbot.config.base import Base
 from .config.logging import setup_logging
 
 
-
+load_dotenv()
 setup_logging()
 
 logger = logging.getLogger(__name__)
@@ -26,11 +28,7 @@ app = FastAPI(
     version="1.0.0"
 )
 
-origins = [
-    "http://localhost:8080",
-    "http://192.168.1.79:8080",
-    "*"
-]
+origins = os.getenv("CORS_ORIGIN")
 
 app.add_middleware(
     CORSMiddleware,
