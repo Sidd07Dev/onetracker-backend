@@ -21,7 +21,8 @@ cd onetracker-backend
 # Step 3: add below keys in .env file
 PORT = 8000
 DB_URI = ******
-SECRET_KEY = ****
+
+CORS_ORIGIN = *
 
 SMTP_HOST=******
 SMTP_PORT=****
